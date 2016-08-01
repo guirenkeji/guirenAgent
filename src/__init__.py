@@ -10,5 +10,7 @@ def create_guirenagent_app():
     app.jinja_env.variable_end_string = '))'
     app.config.from_pyfile('agentconfig.py')
     app.register_module(home)
+    app.register_module(appmanages)
+    app.register_module(serversmanages)
 
     return app

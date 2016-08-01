@@ -8,7 +8,7 @@ home = Module(__name__)
 
 @home.route('/')
 def index():
-    return 'hello guirenAgent'
+    return 'hello guirenAgent '
 @home.route('/dashboard')
 def login():
     if 'username' in session and not session['username'] == None:

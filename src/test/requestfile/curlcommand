@@ -1,0 +1,8 @@
+构建日志请求
+$ curl -i -X POST -H "Content-Type: application/json" \
+-d '{"status":"status","appfilename":"demo","logfile":"guirenAgent.log","logpath":"./"}' \
+127.0.0.1:6013/guirenAgent/appLogs/preview
+server日志查看请求
+$  curl -i -X POST -H "Content-Type: application/json"\
+-d '{"logfile":"iCloud.log","logpath":"C:/tool","linecount":2000}'\ 
+127.0.0.1:6013/guirenAgent/servers/logs/preview \
