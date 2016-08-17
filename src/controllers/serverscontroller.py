@@ -7,6 +7,17 @@ import linecache
 logging.basicConfig(level =logging.DEBUG)
 serversmanages = Module(__name__)
 
+#创建marathon
+def createMarathon(count,server_config):
+    count = request.json['count']
+    server_config = request.json['server_config']
+    print  'marathon'
+def deleteMarathon(count,id):
+    print 'marathon'    
+def createHaproxy():
+    print 'ha'
+def createZookeeper():
+    print 'ha'    
 #日志文件查找
 @serversmanages.route('/guirenAgent/servers/logs/preview',methods = ['POST'])
 def logFileView():
