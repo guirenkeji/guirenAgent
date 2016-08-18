@@ -8,3 +8,5 @@ SECRET_KEY = 'fitnessPlatformSecret'
 fileDownloadPath = ''
 #应用输出日志文件地址
 logFilePath = '/data/app/'
+#docker本地docker.sock地址
+DOCKER_URL = 'unix://var/run/docker.sock'

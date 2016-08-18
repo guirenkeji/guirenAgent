@@ -1,15 +1,15 @@
-# from docker import client
 from docker import Client
-# import docker
 from io import BytesIO
+from src.agentconfig import *
+
 def dockerHandle():
-    cli = Client(base_url='unix://var/run/docker.sock')
+    cli = Client(base_url=DOCKER_URL)
                                            
 #     f = BytesIO(dockerFile.dockerfile.encode('utf-8'))        
 #     response = [line for line in cli.build(        
 #         fileobj=f, rm=True, tag='yourname/volume'  
 #     )]                                             
-#     response  
+#     response 
 #     
     print cli.info()
 def dockerFile():
